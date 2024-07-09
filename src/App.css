@@ -1,0 +1,18 @@
+@keyframes gradient-bg {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animated-gradient {
+    @apply bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500;
+    background-size: 200% 200%;
+    animation: gradient-bg 5s ease infinite;
+  }
+  
